@@ -28,7 +28,7 @@ int main() {
 		cin.getline(mhs[i].Alamat.kota,20);
 		cout << "Masukan umur = ";
 		cin >> mhs[i].Umur;
-		cin.ignore(1, ' ');
+		cin.ignore(1, '\n');
 	}
 
 	for (int i = 0; i < 3; i++) {
