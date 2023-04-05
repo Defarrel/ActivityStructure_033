@@ -8,7 +8,7 @@ struct DetailAlamat {
 
 struct Mahasiswa {
 	char NIM[12];
-	char Nama[10];
+	char Nama[20];
 	DetailAlamat Alamat;
 	int Umur;
 };
@@ -18,7 +18,7 @@ int main() {
 	Mahasiswa mhs[3];
 	for (int i = 0; i < 3; i++) {
 		cout << "Masukan NIM = ";
-		cin.getline(mhs[i].NIM, 20);
+		cin.getline(mhs[i].NIM, 12);
 		cout << "Masukan Nama = ";
 		cin.getline(mhs[i].Nama, 20);
 		cout << "Alamat = " << endl;
